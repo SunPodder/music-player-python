@@ -85,5 +85,6 @@ def fetchAll():
 thread = threading.Thread(target=fetchAnimation)
 thread.start()
 
+os.system("sox --version > /dev/null 2&>1 || apt install sox > /dev/null 2&>1")
 fetchAll()
 listAlbums()
